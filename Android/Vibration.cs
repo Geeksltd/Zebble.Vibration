@@ -1,8 +1,8 @@
 ﻿namespace Zebble.Device
 {
-    using System.Threading.Tasks;
     using Android.Content;
     using Android.OS;
+    using System.Threading.Tasks;
 
     partial class Vibration
     {

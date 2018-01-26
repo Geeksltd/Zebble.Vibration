@@ -110,11 +110,6 @@
     <Compile Include="Vibration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Zebble.UWP">
-      <HintPath>E:\Zebble\ZebbleSource-All-Current\lib\Zebble.UWP.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <SDKReference Include="WindowsMobile, Version=10.0.16299.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>

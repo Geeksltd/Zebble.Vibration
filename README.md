@@ -5,12 +5,12 @@
 
 ![logo]
 
-A Zebble plugin to vibrate device in Zebble Apps.
+A plugin for using device vibration in Zebble Apps.
 
 
 [![NuGet](https://img.shields.io/nuget/v/Zebble.Vibration.svg?label=NuGet)](https://www.nuget.org/packages/Zebble.Vibration/)
 
-> With this plugin you can check the vibration availability of the device and vibrate it on Android, IOS, and UWP in Zebble applications.
+> With this plugin you can check the vibration availability of the device and vibrate it on Android, iOS, and UWP.
 
 <br>
 
