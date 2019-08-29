@@ -5,7 +5,10 @@
 
     public static partial class Vibration
     {
-        public static async Task Run(OnError errorAction = OnError.Toast)
+        const int DEFAULT_DURATION = 400;
+        public static Task Run(OnError errorAction = OnError.Toast) => Run(DEFAULT_DURATION.Milliseconds(), errorAction);
+
+        public static async Task Run(TimeSpan duration, OnError errorAction = OnError.Toast)
         {
             try
             {
@@ -14,7 +17,7 @@
 
                 if (!IsAvailable()) throw new Exception("Vibration is not available on this device.");
 
-                await DoRun();
+                await DoRun((int)duration.TotalMilliseconds);
             }
             catch (Exception ex)
             {

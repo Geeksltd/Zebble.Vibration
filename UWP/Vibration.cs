@@ -6,17 +6,15 @@
 
     public partial class Vibration
     {
-        const int DURATION = 400;
-
         public static bool IsAvailable()
         {
             try { return VibrationDevice.GetDefault() != null; }
             catch { return false; /* No logging is needed */}
         }
 
-        static Task DoRun()
+        static Task DoRun(int milliseconds)
         {
-            VibrationDevice.GetDefault()?.Vibrate(DURATION.Milliseconds());
+            VibrationDevice.GetDefault()?.Vibrate(milliseconds.Milliseconds());
             return Task.CompletedTask;
         }
     }

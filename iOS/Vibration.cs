@@ -7,10 +7,10 @@
 
     partial class Vibration
     {
-        const int VIBRATE_SOUND_CODE = 1352, DEFAULT_DURATION = 400;
+        const int VIBRATE_SOUND_CODE = 1352;
 
         public static bool IsAvailable() => Device.OS.HardwareModel.Contains("iPhone", caseSensitive: false);
 
-        static Task DoRun() => new SystemSound(VIBRATE_SOUND_CODE).PlaySystemSoundAsync();
+        static Task DoRun(int milliseconds) => new SystemSound(VIBRATE_SOUND_CODE).PlaySystemSoundAsync();
     }
 }
