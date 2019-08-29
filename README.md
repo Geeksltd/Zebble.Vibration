@@ -33,7 +33,7 @@ Zebble.Device.Vibration.IsAvailable();
 
 ##### Vibrate device:
 ```csharp
-Zebble.Device.Vibration.Run();
+Zebble.Device.Vibration.Run(400.Milliseconds());
 ```
 <br>
 
