@@ -1,8 +1,8 @@
 ﻿namespace Zebble.Device
 {
-    using System;
     using System.Threading.Tasks;
     using Windows.Phone.Devices.Notification;
+    using Olive;
 
     public partial class Vibration
     {

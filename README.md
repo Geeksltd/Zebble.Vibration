@@ -1,4 +1,4 @@
-[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.Vibration/master/Shared/NuGet/Icon.png "Zebble.Vibration"
+﻿[logo]: https://raw.githubusercontent.com/Geeksltd/Zebble.Vibration/master/icon.png "Zebble.Vibration"
 
 
 ## Zebble.Vibration
